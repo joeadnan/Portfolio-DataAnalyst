@@ -24,6 +24,7 @@ export type Project = {
   tools: string[];
   results: string[];
   accent: ProjectAccent;
+  project: string;
 };
 
 export type CaseStudy = {

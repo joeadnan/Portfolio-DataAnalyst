@@ -65,9 +65,12 @@ export function Projects() {
                     <span className="rounded-full border border-sky-400/30 bg-sky-400/10 px-3 py-1 text-xs font-semibold text-sky-300">
                       {project.category}
                     </span>
-                    <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
+                    <a
+                      href="http://"
+                      className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300 hover:bg-emerald-50"
+                    >
                       {project.label}
-                    </span>
+                    </a>
                   </div>
 
                   <h3 className="mt-4 text-2xl font-bold text-white">
