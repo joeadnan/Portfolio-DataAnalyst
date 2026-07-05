@@ -115,12 +115,12 @@ export function Projects() {
                     </div>
                   </div>
 
-                  <div className="rounded-2xl border border-sky-400/20 bg-sky-400/10 p-5">
+                  {/* <div className="rounded-2xl border border-sky-400/20 bg-sky-400/10 p-5">
                     <h4 className="font-bold text-sky-200">Interview Point</h4>
                     <p className="mt-3 text-sm leading-7 text-slate-200">
                       {project.interviewPoint}
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </article>

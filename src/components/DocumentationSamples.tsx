@@ -10,7 +10,7 @@ export function DocumentationSamples() {
           <SectionTitle
             eyebrow="Data Documentation"
             title="Documentation Samples"
-            description="Contoh dokumentasi yang penting untuk portfolio Data Analyst: catatan analisis, checklist data cleaning, dokumentasi query SQL, dan panduan membaca dashboard."
+            description=""
           />
         </Reveal>
 
