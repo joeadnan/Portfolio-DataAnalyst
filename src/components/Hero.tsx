@@ -71,7 +71,9 @@ const analysisCards = [
 
 //             <div>
 //               <p className="text-slate-500">Location</p>
-//               <p className="font-semibold text-white">{availability.location}</p>
+//               <p className="font-semibold text-white">
+//                 {availability.location}
+//               </p>
 //             </div>
 
 //             <div>
@@ -112,7 +114,9 @@ const analysisCards = [
 //             <div className="mb-5 flex items-center justify-between">
 //               <div>
 //                 <p className="text-sm text-slate-400">Analytics Workflow</p>
-//                 <h3 className="text-xl font-bold text-white">Data Project Check</h3>
+//                 <h3 className="text-xl font-bold text-white">
+//                   Data Project Check
+//                 </h3>
 //               </div>
 //               <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
 //                 Ready
@@ -151,30 +155,27 @@ export function Hero() {
       id="home"
       className="relative overflow-hidden border-b border-white/10 bg-slate-950"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.22),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,0.14),transparent_35%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.22),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.14),transparent_35%)]" />
 
-      {/* KEMBALI KE LAYOUT 2 KOLOM */}
       <div className="relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 py-28 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-        {/* KOLOM 1: Informasi Profil */}
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-sm text-sky-200">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
             {profile.status}
           </div>
 
-          {/* PEMBUNGKUS FLEX: Membuat Foto Menempel Tepat di Samping Nama (Bagian Paling Atas) */}
+          {/* PEMBUNGKUS FLEX: Membuat foto menempel presisi di kanan nama */}
           <div className="flex items-start justify-between gap-4 sm:justify-start sm:gap-6">
             {/* Nama dan Role */}
             <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white md:text-6xl">
               {profile.name}
-              <span className="mt-3 block bg-gradient-to-r from-sky-300 to-orange-300 bg-clip-text text-transparent">
+              <span className="mt-3 block bg-gradient-to-r from-sky-300 to-emerald-300 bg-clip-text text-transparent">
                 {profile.role}
               </span>
             </h1>
 
-            {/* Foto Profil Responsive (Menempel di Kanan Nama, Rata Atas) */}
-            {/* Ukuran diperbesar: HP (80px) -> Tablet (96px) -> Laptop/PC (112px) */}
-            <div className="relative h-20 w-20 shrink-0 sm:h-24 sm:w-24 md:h-28 md:w-28 mt-1 md:mt-2">
+            {/* KOTAK PEMBUNGKUS FOTO: Mengatur skala ukuran proporsional di setiap layar */}
+            <div className="relative h-16 w-16 shrink-0 sm:h-20 sm:w-20 md:h-24 md:w-24 mt-1 md:mt-2">
               <span className="absolute inset-0 animate-ping rounded-full bg-sky-400/10 opacity-75" />
               <img
                 src={profile.imageUrl || "https://unsplash.com"}
@@ -248,42 +249,38 @@ export function Hero() {
 
           <div className="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-              <p className="text-2xl font-bold text-white">IT</p>
-              <p className="mt-1 text-sm text-slate-400">Support Focus</p>
+              <p className="text-2xl font-bold text-white">SQL</p>
+              <p className="mt-1 text-sm text-slate-400">Query Analysis</p>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-              <p className="text-2xl font-bold text-white">LAN</p>
-              <p className="mt-1 text-sm text-slate-400">Basic Network</p>
+              <p className="text-2xl font-bold text-white">Excel</p>
+              <p className="mt-1 text-sm text-slate-400">Dashboard & KPI</p>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-              <p className="text-2xl font-bold text-white">Helpdesk</p>
-              <p className="mt-1 text-sm text-slate-400">Ticket Workflow</p>
+              <p className="text-2xl font-bold text-white">BI</p>
+              <p className="mt-1 text-sm text-slate-400">Insight Reporting</p>
             </div>
           </div>
         </div>
 
-        {/* KOLOM 2: Dashboard Status */}
         <div className="relative">
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-6 shadow-2xl backdrop-blur">
             <div className="mb-5 flex items-center justify-between">
               <div>
-                <p className="text-sm text-slate-400">Troubleshooting Status</p>
-                <h3 className="text-xl font-bold text-white">Daily IT Check</h3>
+                <p className="text-sm text-slate-400">Analytics Workflow</p>
+                <h3 className="text-xl font-bold text-white">
+                  Data Project Check
+                </h3>
               </div>
               <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
-                Active
+                Ready
               </span>
             </div>
 
             <div className="space-y-4">
-              {[
-                ["PC / Laptop", "Hardware check completed"],
-                ["Network", "IP, DHCP, DNS verified"],
-                ["Printer", "Sharing and driver checked"],
-                ["Documentation", "Ticket notes updated"],
-              ].map(([title, desc]) => (
+              {analysisCards.map(([title, desc]) => (
                 <div
                   key={title}
                   className="rounded-2xl border border-white/10 bg-slate-950/70 p-4"
@@ -298,9 +295,9 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-orange-400/20 bg-orange-400/10 p-5 text-orange-100 shadow-xl lg:block">
+          <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5 text-emerald-100 shadow-xl lg:block">
             <p className="text-sm font-semibold">Focus Area</p>
-            <p className="mt-1 text-2xl font-bold">User Support</p>
+            <p className="mt-1 text-2xl font-bold">Business Insight</p>
           </div>
         </div>
       </div>
