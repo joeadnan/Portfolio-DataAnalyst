@@ -175,7 +175,7 @@ export function Hero() {
             </h1>
 
             {/* KOTAK PEMBUNGKUS FOTO: Mengatur skala ukuran proporsional di setiap layar */}
-            <div className="relative h-16 w-16 shrink-0 sm:h-20 sm:w-20 md:h-24 md:w-24 mt-1 md:mt-2">
+            <div className="relative h-24 w-24 shrink-0 sm:h-32 sm:w-32 md:h-36 md:w-36 mt-1 md:mt-2">
               <span className="absolute inset-0 animate-ping rounded-full bg-sky-400/10 opacity-75" />
               <img
                 src={profile.imageUrl || "https://unsplash.com"}
