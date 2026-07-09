@@ -11,6 +11,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/mohammad-hasim-adnan/",
   github: "https://github.com/joeadnan/data-analyst-portfolio",
   cv: "/documents/CV_Mohammad_Hasim_Adnan.pdf",
+  imageUrl: "/documents/Fotojas.jpeg",
   summary: "",
 };
 
