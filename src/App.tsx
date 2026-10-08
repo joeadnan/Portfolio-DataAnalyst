@@ -18,6 +18,7 @@ export default function App() {
       <Header />
       <Hero />
       <About />
+      <Projects />
       <Skills />
       <Tools />
       <Certifications />
@@ -25,7 +26,6 @@ export default function App() {
       <DocumentationSamples />
       <WhyHireMe />
       <Workflow />
-      <Projects />
       <Learning />
       <Contact />
       <Footer />

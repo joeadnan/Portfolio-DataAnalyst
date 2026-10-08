@@ -66,7 +66,7 @@ export function Projects() {
                       {project.category}
                     </span>
                     <a
-                      href="http://"
+                      href={project.imageUrl}
                       className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300 hover:bg-emerald-50"
                     >
                       {project.label}

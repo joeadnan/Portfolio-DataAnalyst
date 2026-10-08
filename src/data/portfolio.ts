@@ -98,39 +98,111 @@ export const workflow = [
 ];
 
 export const projects = [
+  // {
+  //   title: "Sales Performance Dashboard",
+  //   category: "Dashboard Analytics",
+  //   label: "Lab Practice",
+  //   problem:
+  //     "Management membutuhkan ringkasan performa penjualan bulanan untuk melihat revenue, produk terlaris, channel penjualan, dan tren pertumbuhan.",
+  //   analysis: [
+  //     "Mengelompokkan data transaksi berdasarkan bulan, produk, channel, dan customer segment.",
+  //     "Menghitung KPI revenue, jumlah transaksi, average order value, dan kontribusi setiap kategori produk.",
+  //     "Membandingkan performa antar bulan untuk menemukan kenaikan atau penurunan penjualan.",
+  //   ],
+  //   steps: [
+  //     "Import dataset transaksi ke Excel atau spreadsheet.",
+  //     "Membersihkan data duplikat, format tanggal, kategori produk, dan nilai kosong.",
+  //     "Membuat pivot table untuk revenue bulanan, top product, dan channel penjualan.",
+  //     "Membuat chart trend revenue, bar chart produk terlaris, dan card KPI utama.",
+  //     "Menyusun insight singkat mengenai bulan terbaik, produk dominan, dan channel paling efektif.",
+  //   ],
+  //   result:
+  //     "Dashboard berhasil menampilkan performa penjualan secara ringkas sehingga user dapat memahami kondisi penjualan tanpa membaca data mentah.",
+  //   impact: [
+  //     "Mempercepat proses review performa penjualan bulanan.",
+  //     "Membantu management melihat produk dan channel yang paling berkontribusi.",
+  //     "Membuat data transaksi lebih mudah dibaca oleh user non-teknis.",
+  //   ],
+  //   tools: ["Microsoft Excel", "Pivot Table", "Chart", "Data Cleaning"],
+  //   interviewPoint:
+  //     "Saya tidak hanya membuat chart, tetapi mulai dari memahami KPI, membersihkan data, lalu menyusun insight yang bisa dipakai untuk keputusan bisnis.",
+  // },
+
   {
-    title: "Sales Performance Dashboard",
-    category: "Dashboard Analytics",
-    label: "Lab Practice",
+    title: "Tokopedia Women's Fashion Sales Analysis",
+
+    category: "Data Analysis",
+
+    label: "Portfolio Project",
+    imageUrl:
+      "https://github.com/joeadnan/tokopedia-womens-fashion-sales-analysis",
+
     problem:
-      "Management membutuhkan ringkasan performa penjualan bulanan untuk melihat revenue, produk terlaris, channel penjualan, dan tren pertumbuhan.",
+      "Bagaimana karakteristik produk fashion wanita di Tokopedia berdasarkan harga, rating, lokasi penjual, dan kategori produk, serta insight apa yang dapat digunakan untuk memahami pola pasar dan performa produk?",
+
     analysis: [
-      "Mengelompokkan data transaksi berdasarkan bulan, produk, channel, dan customer segment.",
-      "Menghitung KPI revenue, jumlah transaksi, average order value, dan kontribusi setiap kategori produk.",
-      "Membandingkan performa antar bulan untuk menemukan kenaikan atau penurunan penjualan.",
+      "Menganalisis jumlah produk, rata-rata harga, rata-rata rating, dan persebaran lokasi penjual.",
+
+      "Membandingkan harga produk berdasarkan kategori fashion wanita.",
+
+      "Mengidentifikasi kategori produk yang paling dominan dalam dataset.",
+
+      "Menganalisis distribusi harga untuk melihat rentang produk murah, menengah, dan premium.",
+
+      "Membandingkan rating produk untuk melihat pola kepuasan customer.",
+
+      "Menganalisis persebaran seller berdasarkan lokasi untuk mengetahui wilayah dengan jumlah produk terbanyak.",
     ],
+
     steps: [
-      "Import dataset transaksi ke Excel atau spreadsheet.",
-      "Membersihkan data duplikat, format tanggal, kategori produk, dan nilai kosong.",
-      "Membuat pivot table untuk revenue bulanan, top product, dan channel penjualan.",
-      "Membuat chart trend revenue, bar chart produk terlaris, dan card KPI utama.",
-      "Menyusun insight singkat mengenai bulan terbaik, produk dominan, dan channel paling efektif.",
+      "Melakukan data cleaning pada dataset Tokopedia Women's Fashion menggunakan Python dan SQL.",
+
+      "Menangani missing value, duplicate data, format harga, rating, kategori, dan lokasi seller.",
+
+      "Membuat database dan query SQL untuk exploratory data analysis.",
+
+      "Melakukan exploratory data analysis untuk menemukan pola harga, rating, kategori, dan lokasi.",
+
+      "Membuat KPI utama seperti Total Products, Average Price, Average Rating, dan Total Locations.",
+
+      "Membuat dashboard interaktif menggunakan Power BI.",
+
+      "Menyusun insight dan rekomendasi berdasarkan hasil visualisasi dashboard.",
     ],
+
     result:
-      "Dashboard berhasil menampilkan performa penjualan secara ringkas sehingga user dapat memahami kondisi penjualan tanpa membaca data mentah.",
+      "Analisis berhasil mengubah dataset produk fashion wanita Tokopedia menjadi dashboard interaktif yang mempermudah pemahaman kondisi pasar, distribusi harga, kategori produk, rating, dan persebaran seller.",
+
     impact: [
-      "Mempercepat proses review performa penjualan bulanan.",
-      "Membantu management melihat produk dan channel yang paling berkontribusi.",
-      "Membuat data transaksi lebih mudah dibaca oleh user non-teknis.",
+      "Mempermudah identifikasi kategori fashion wanita yang paling dominan.",
+
+      "Membantu memahami rentang harga produk di marketplace.",
+
+      "Menampilkan persebaran seller berdasarkan lokasi secara lebih jelas.",
+
+      "Mempermudah analisis hubungan antara harga, rating, dan kategori produk.",
+
+      "Mengubah data mentah menjadi insight yang mudah dipahami melalui dashboard.",
     ],
-    tools: ["Microsoft Excel", "Pivot Table", "Chart", "Data Cleaning"],
-    interviewPoint:
-      "Saya tidak hanya membuat chart, tetapi mulai dari memahami KPI, membersihkan data, lalu menyusun insight yang bisa dipakai untuk keputusan bisnis.",
+
+    tools: [
+      "Python",
+      "Pandas",
+      "SQL",
+      "MySQL",
+      "Power BI",
+      "Excel",
+      "EDA",
+      "Data Cleaning",
+      "Data Visualization",
+    ],
   },
+
   {
     title: "Customer Segmentation Analysis",
     category: "Business Analysis",
     label: "Lab Practice",
+    imageUrl: "https://github.com/joeadnan/Customer-Segmentation-Analysis",
     problem:
       "Bisnis ingin mengetahui kelompok pelanggan berdasarkan frekuensi transaksi dan nilai belanja agar promo bisa lebih tepat sasaran.",
     analysis: [
